@@ -10,7 +10,7 @@ rpi-hubot is a chat bot built on the [Hubot][hubot] framework. It was initially 
 
 ## Run hubot locally
 
-    $ docker run -i -t rpi-hubot
+    $ docker run -i -t matthiasg/rpi-hubot
 
 ## Run hubot on Slack
 
@@ -20,7 +20,7 @@ First, set HUBOT_SLACK_TOKEN environment variable. E.g.:
 
 Then run hubot on slack:
 
-    $ docker run -d --env HUBOT_SLACK_TOKEN rpi-hubot slack
+    $ docker run -d --env HUBOT_SLACK_TOKEN matthiasg/rpi-hubot slack
 
 ## Credits
 
