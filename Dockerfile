@@ -11,8 +11,6 @@ RUN npm install forever -g
 
 EXPOSE 8080
 
-ENV PATH node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH
-
-ENTRYPOINT ["forever", "start", "-c", "coffee", "node_modules/.bin/hubot", "--name", "'hubot'", "-a"]
+ENTRYPOINT ["forever", "start", "-c", "/bin/sh", "bin/hubot", "-a"]
 
 CMD ["shell"]
