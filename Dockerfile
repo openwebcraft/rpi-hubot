@@ -7,10 +7,10 @@ WORKDIR /hubot
 
 RUN npm install
 
-RUN npm install forever coffee-script -g
+RUN npm install forever -g
 
 EXPOSE 8080
 
-ENTRYPOINT ["forever", "start", "-c", "/bin/bash", "bin/hubot", "-a"]
+ENTRYPOINT ["forever", "-c", "/bin/bash", "bin/hubot", "-a"]
 
 CMD ["shell"]
