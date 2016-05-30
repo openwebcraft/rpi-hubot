@@ -22,7 +22,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "shell": "bin/hubot -a shell",
-    "slack": "bin/hubot -a slack"
+    "shell": "forever start bin/hubot -a shell",
+    "slack": "forever start bin/hubot -a slack"
   }
 }

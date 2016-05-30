@@ -22,12 +22,13 @@ First, set HUBOT_SLACK_TOKEN environment variable. E.g.:
     
 For optional use of [hubot-microsoft-translato](https://www.npmjs.com/package/hubot-microsoft-translator) set also these additional environment variables:
 
+    $ export HUBOT_SLACK_EXIT_ON_DISCONNECT=true
     $ export HUBOT_MICROSOFT_TRANSLATOR_CLIENT_ID="your_microsoft_translator_client_id"
     $ export HUBOT_MICROSOFT_TRANSLATOR_CLIENT_SECRET="your_microsoft_translator_client_secret"
 
 Then run hubot on slack:
 
-    $ docker run -d --env HUBOT_SLACK_TOKEN --env HUBOT_MICROSOFT_TRANSLATOR_CLIENT_ID --env HUBOT_MICROSOFT_TRANSLATOR_CLIENT_SECRET matthiasg/rpi-hubot slack
+    $ docker run -d --env HUBOT_SLACK_TOKEN --env HUBOT_MICROSOFT_TRANSLATOR_CLIENT_ID --env HUBOT_MICROSOFT_TRANSLATOR_CLIENT_SECRET --env HUBOT_SLACK_EXIT_ON_DISCONNECT matthiasg/rpi-hubot slack
 
 ## Credits
 

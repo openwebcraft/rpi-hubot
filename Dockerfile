@@ -7,6 +7,8 @@ WORKDIR /hubot
 
 RUN npm install
 
+RUN npm install forever -g
+
 EXPOSE 8080
 
 ENTRYPOINT ["npm", "run"]
